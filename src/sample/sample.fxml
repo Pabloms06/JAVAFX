@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="357.0" prefWidth="359.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label fx:id="nombre" text="Nombre:" />
+      <TextField fx:id="nombretexto" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label fx:id="apellido" text="Apellidos:" GridPane.rowIndex="2" />
+      <TextField fx:id="apellidotexto" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Label fx:id="correo" text="Correo electronico:" GridPane.rowIndex="4" />
+      <TextField fx:id="correotexto" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Label fx:id="contraseña" text="Contraseña:" GridPane.rowIndex="6" />
+      <PasswordField fx:id="textocontraseña" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+      <Label fx:id="sexo" text="Sexo:" GridPane.rowIndex="9" />
+      <RadioButton fx:id="h" mnemonicParsing="false" onMouseClicked="#SeleccionadoH" text="Hombre" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+      <RadioButton fx:id="m" mnemonicParsing="false" onMouseClicked="#SeleccionadoM" text="Mujer" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+      <Button fx:id="boton" mnemonicParsing="false" onMouseClicked="#Registrado" text="Registrarse" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+      <Label fx:id="mostrarcontraseña" onMouseEntered="#MostrarContraseña" onMouseExited="#MostrarContraseñaNo" text="MostrarContraseña" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+      <Label fx:id="contraseñavisor" text="" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+   </children>
+</GridPane>
